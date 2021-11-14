@@ -2,7 +2,7 @@ package Entidades;
 import javax.naming.directory.SearchResult;
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
-
+//Metodo para nueva matricula
 public class Universidad{
     public matriculaXestudiante matricula = new matriculaXestudiante();
     
