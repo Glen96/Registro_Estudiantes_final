@@ -1,4 +1,5 @@
 package Entidades;
+
 import javax.swing.JOptionPane;
 
 public class Profesor extends Entidad {
@@ -45,4 +46,8 @@ public class Profesor extends Entidad {
     }
 
     
+
+public class Profesor {
+    int prof;
+
 }

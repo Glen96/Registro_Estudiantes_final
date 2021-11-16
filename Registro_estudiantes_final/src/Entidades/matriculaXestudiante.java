@@ -4,22 +4,22 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-public class matriculaXestudiante extends Entidad{
+public class matriculaXestudiante{
 
     ArrayList<Estudiante> listaEstudiantes = new ArrayList<Estudiante>();
 
     public void nuevoestudiante (){
         Estudiante nuevo = new Estudiante();
         String pNombre = JOptionPane.showInputDialog(null, "Ingrese su nombre: ");
-        setNombre(pNombre);
+        nuevo.setNombre(pNombre);
         String pNacionalidad = JOptionPane.showInputDialog(null, "Ingrese su nacionalidad: ");
-        setNacionalidad(pNacionalidad);
+        nuevo.setNacionalidad(pNacionalidad);
         short pEdad = Short.parseShort(JOptionPane.showInputDialog(null, "Ingrese su edad: "));
-        setEdad(pEdad);
+        nuevo.setEdad(pEdad);
         int pCedula = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese su cedula: "));
-        setCedula(pCedula);
+        nuevo.setCedula(pCedula);
         Aula aulaE = new Aula();
-        regristrarAula();
+        aulaE.regristrarAula();
 
         nuevo.setAulaEstudiante(aulaE);
 

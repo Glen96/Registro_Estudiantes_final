@@ -1,7 +1,5 @@
 package Entidades;
 
-
-
 public class Materia {
     protected String nombreCurso = "Matematicas";
     protected String descrip = "Materia que se lleva en el segundo cuatrimestre de la carrera.";
