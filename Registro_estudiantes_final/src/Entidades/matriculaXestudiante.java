@@ -11,15 +11,15 @@ public class matriculaXestudiante extends Entidad{
     public void nuevoestudiante (){
         Estudiante nuevo = new Estudiante();
         String pNombre = JOptionPane.showInputDialog(null, "Ingrese su nombre: ");
-        nuevo.setNombre(pNombre);
+        setNombre(pNombre);
         String pNacionalidad = JOptionPane.showInputDialog(null, "Ingrese su nacionalidad: ");
-        nuevo.setNacionalidad(pNacionalidad);
+        setNacionalidad(pNacionalidad);
         short pEdad = Short.parseShort(JOptionPane.showInputDialog(null, "Ingrese su edad: "));
-        nuevo.setEdad(pEdad);
+        setEdad(pEdad);
         int pCedula = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese su cedula: "));
-        nuevo.setCedula(pCedula);
+        setCedula(pCedula);
         Aula aulaE = new Aula();
-        aulaE.regristrarAula();
+        regristrarAula();
 
         nuevo.setAulaEstudiante(aulaE);
 
