@@ -1,5 +1,5 @@
 package Entidades;
 
-public gitclass Materia {
+public class Materia {
     
 }
