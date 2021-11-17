@@ -1,6 +1,7 @@
 package Entidades;
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        menuPrincipal menuPrincipal = new menuPrincipal();
+        menuPrincipal.llamarMenuPrincipal();
     }
 }
