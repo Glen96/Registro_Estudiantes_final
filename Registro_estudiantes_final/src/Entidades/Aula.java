@@ -45,6 +45,7 @@ public class Aula {
     public String regristrarAula() {
 
         int op = 1;
+        String aula = "";
 
         do {
             String arr = "1.Profesor de programacion\n2.Profesor de matematicas\n3.Volver\n";
@@ -64,7 +65,8 @@ public class Aula {
                 if ("S 9:00 - 11:30".equals(opt))
                     profesor = ("Profesor de programacion");
                 IDhorario = ("S 9:00 - 11:30");
-                return opt;
+                aula = opt;
+                return aula;
             case 2:
                 String ID2[] = { "Seleccione su horario", "L 6:00 - 8:30", "S 9:00 - 11:30", "Volver", };
 
@@ -74,19 +76,20 @@ public class Aula {
                 if ("L 6:00 - 8:30".equals(opt2))
                     profesor = ("Profesor de Matematicas");
                 IDhorario = ("L 6:00 - 8:30");
+                aula = opt2;
 
                 if ("S 9:00 - 11:30".equals(opt2))
                     profesor = ("Profesor de matematicas");
                 IDhorario = ("S 9:00 - 11:30");
 
-                return opt2;
+                return aula;
 
             default:
                 op = 3;
                 break;
             }
         } while (op != 3);
-        return "Error";
+        return aula;
 
     }
 }
