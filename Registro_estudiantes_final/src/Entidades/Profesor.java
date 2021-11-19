@@ -94,8 +94,8 @@ public class Profesor extends Entidad {
         this.reporte = reporte;
     }
 
-    // public class Profesor {
-    // int prof;
-    //Revisar codigo
+    public void prueba(){
+        
+    }
 
 }
