@@ -31,7 +31,7 @@ public class Profesor extends Entidad {
                 case 2:
                 JOptionPane.showMessageDialog(null, "El profesor de matemáticas es: "+ profMate);
                 break;
-
+                //
                 //Para entrar como prof y elegir opciones
                 case 3:
                 JOptionPane.showMessageDialog(null, "Está ingresando como profesor\n");
