@@ -76,8 +76,6 @@ public class Profesor extends Entidad {
     }
 
 
-
-
     public int getNotaFinal() {
         return notaFinal;
     }
@@ -92,10 +90,6 @@ public class Profesor extends Entidad {
 
     public void setReporte(String reporte) {
         this.reporte = reporte;
-    }
-
-    public void prueba(){
-        String pruebaAA;
     }
 
 }
