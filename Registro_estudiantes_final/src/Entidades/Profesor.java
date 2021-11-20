@@ -95,7 +95,7 @@ public class Profesor extends Entidad {
     }
 
     public void prueba(){
-        
+        String pruebaAA;
     }
 
 }
