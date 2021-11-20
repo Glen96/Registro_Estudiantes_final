@@ -14,7 +14,7 @@ public class Estudiante extends Entidad implements Matriculable, Retirable, Paga
     private matriculaXestudiante mXe = new matriculaXestudiante();
     private menuPrincipal menuPrincipal = new menuPrincipal();
 
-    public void LlamarMenuEstudiante() {
+    protected void LlamarMenuEstudiante() {
         opc = Integer.parseInt(JOptionPane.showInputDialog(null, "!Modulo Estudiantes!\n"
                 + "Por favor elija la opcion que desea\n" + "1. Matricular\n" + "2. Pagar\n" + "3. Retirar\n"));
         switch (opc) {
@@ -33,7 +33,6 @@ public class Estudiante extends Entidad implements Matriculable, Retirable, Paga
             Retirar();
             break;
         case 4:
-            
             menuPrincipal.llamarMenuPrincipal();
             break;
         }
