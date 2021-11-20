@@ -79,7 +79,10 @@ public class Aula {
                     profesor = ("Profesor de matematicas");
                 IDhorario = ("S 9:00 - 11:30");
 
-                return opt2;
+                //return opt2;
+            case 3: 
+            menuPrincipal nvomenu = new menuPrincipal();
+            nvomenu.llamarMenu();
 
             default:
                 op = 3;
