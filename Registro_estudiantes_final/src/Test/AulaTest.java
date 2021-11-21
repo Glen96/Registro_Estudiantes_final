@@ -1,15 +1,21 @@
-package Entidades;
+package Test;
 
+import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
+import org.junit.Test;
 
-public class Aula {
-    public String profesor;
+//import Entidades.Aula;
+
+public class AulaTest {
+
+    private String profesor;
     public String IDhorario, AulaAsignada;
-    ArrayList<String> Aula = new ArrayList<String>();
+    public ArrayList<String> Aula = new ArrayList<String>();
 
-    public ArrayList<String> regristrarAula() {
+    //se prueba el metodo de RegistrarAula de la clase Aula
+    @Test
+    public void regristrarAula() {
 
         int op = 1;
 
@@ -27,13 +33,14 @@ public class Aula {
                 if ("L 6:00 - 8:30".equals(opt)) {
                     profesor = ("Profesor de programacion");
                     IDhorario = ("L 6:00 - 8:30");
+                    
                 } else {
                     profesor = ("Profesor de programacion");
                     IDhorario = ("S 9:00 - 11:30");
                 }
                 AulaAsignada = profesor + " " + IDhorario;
                 Aula.add(AulaAsignada);
-                return Aula;
+                assertEquals("Profesor de programacion L 6:00 - 8:30", AulaAsignada);
             case 2:
                 String ID2[] = { "Seleccione su horario", "L 6:00 - 8:30", "S 9:00 - 11:30", "Volver", };
 
@@ -49,13 +56,15 @@ public class Aula {
                 }
                 AulaAsignada = profesor + " " + IDhorario;
                 Aula.add(AulaAsignada);
-                return Aula;
+                assertEquals("Profesor de Matematicas L 6:00 - 8:30", AulaAsignada);
             default:
                 op = 3;
                 break;
             }
+
         } while (op != 3);
-        return Aula;
+        // return Aula;
+
     }
 
 }
