@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 import Interfaces.Matriculable;
 import Interfaces.Pagable;
 import Interfaces.Retirable;
-
+//
 public class Estudiante extends Entidad implements Matriculable, Retirable, Pagable {
 
     protected int idEstudiante;
