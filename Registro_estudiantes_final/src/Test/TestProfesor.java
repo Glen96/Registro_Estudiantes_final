@@ -3,6 +3,9 @@ package Test;
 import static org.junit.Assert.assertEquals;
 import javax.swing.JOptionPane;
 import org.junit.Test;
+
+import Entidades.Estudiante;
+import Entidades.menuPrincipal;
 public class TestProfesor {
     protected int notaFinal;
     protected String reporte;
